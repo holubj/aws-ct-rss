@@ -1,0 +1,17 @@
+service: aws-ct-rss
+
+plugins:
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          path: rss
+          method: get
