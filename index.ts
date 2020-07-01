@@ -13,7 +13,6 @@ export const handler = async (event, context, callback) => {
       id: url,
       link: url,
       language: 'cs',
-      image: `https:${DOM.querySelector('#logo').attributes['src']}`,
       favicon: 'https://img.ceskatelevize.cz/loga/favicon_v3.ico',
       copyright: '© Česká televize',
     });
